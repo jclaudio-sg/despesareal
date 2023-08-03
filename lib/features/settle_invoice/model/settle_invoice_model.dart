@@ -1,13 +1,13 @@
-import '../../debt/model/debt_model.dart';
 import '../../form_payment/model/form_payment.dart';
+import '../../invoice/model/invoice_model.dart';
 
-class SettleDebtModel {
+class SettleInvoiceModel {
   final int? id;
-  final DebtModel? debtModel;
+  final InvoiceModel? debtModel;
   final FormPayment? formPayment;
   final double? amountPaid;
   final DateTime? payDay;
 
-  SettleDebtModel(this.id, this.debtModel, this.formPayment,
+  SettleInvoiceModel(this.id, this.debtModel, this.formPayment,
       this.amountPaid, this.payDay);
 }
